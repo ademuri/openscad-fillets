@@ -22,17 +22,20 @@ This library is used to add rounding or fillets to your 2d objects. It has two m
   rounding2d(r)
   r = radius of rounding
   ```
+  `rounding2d` removes material to round the outside corners of a shape.
 
 - ```
   fillet2d(r)
   r = radius of rounding
   ```
+  `fillet2d` adds material to round the inside corners of a shape.
 
 ## fillets3d.scad
 
 This library is used to add top and/or bottom fillets to your 3d objects. It has 3 modules:
 
-- ```topBottomFillet(b, t, r, s, e)
+- ```
+  topBottomFillet(b, t, r, s, e)
   b = z of bottom of 3d object
   t = z of top of 3d object
   r = radius of fillet
@@ -40,14 +43,16 @@ This library is used to add top and/or bottom fillets to your 3d objects. It has
   e = enabled (pass e = 0 to disable fillet for faster preview)
   ```
 
-- ```topFillet(t, r, s, e)
+- ```
+  topFillet(t, r, s, e)
   t = z of top of 3d object
   r = radius of fillet
   s = steps of filler (smaller is smoother)
   e = enabled (pass e = 0 to disable fillet for faster preview)
   ```
 
-- ```bottomFillet(b, r, s, e)
+- ```
+  bottomFillet(b, r, s, e)
   b = z of bottom of 3d object
   r = radius of fillet
   s = steps of filler (smaller is smoother)
